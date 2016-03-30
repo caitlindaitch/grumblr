@@ -6,6 +6,7 @@
   <div ng-show="formType == 'edit'">
     <a data-ui-sref='grumbleShow({id: grumble.id})'>&larr; Back</a>
     <button ng-click='update()'>Save</button>
+    <button ng-click='destroy()'>Delete</button>
   </div>
   <div ng-show="formType == 'new'">
     <button ng-click='create()'>New Grumble</button>

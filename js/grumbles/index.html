@@ -1,7 +1,7 @@
 <h2>These are all the Grumbles</h2>
 
-<div data-ng-repeat="grumble in GrumbleIndexViewModel.grumbles">
-  <div class='grumbles' ng-repeat='grumble in GrumbleIndexViewModel.grumbles'>
-    <grumble-show data-grumble='grumble'></grumble-show>
-  </div>
+<div class='grumbles' ng-repeat='grumble in GrumbleIndexViewModel.grumbles'>
+  <h3><a data-ui-sref="grumbleShow({id: grumble.id})">{{grumble.title}}</a></h3>
+  <h4>{{grumble.authorName}}</h4>
+  <p><img data-ng-src="{{grumble.photoUrl}}"></p>
 </div>
